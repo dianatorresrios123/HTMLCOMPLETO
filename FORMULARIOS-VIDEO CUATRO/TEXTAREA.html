@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>texto en cuadros grandes y con parametros</title>
+</head>
+<body>
+    
+<form method="POST" action="backend/form.php" enctype="multipart/form-data">
+
+  <textarea name="comentario" id="" cols="30" rows="10" minlength="10" 
+  maxlength="500" placeholder="Escribe aquì tu comentario..." required></textarea>
+                                                                <!--TEXTAREA: me indica cuantas columnas  
+                                                                      y cuantas filas nencesito, tambien valida  que  los
+                                                                      datos  escritos correspondan a  cada  uno de  las  solictudes.
+VALIDACIONES  PARA VERIFICAR, PARA  REVISAR  QUE  HAGA  LO QUE  HE  PROGRAMADO                                       
+                                                                    REQUIRED: emitira  un error  cuando el formulario no esta  lleno en su  totalidad
+                                                                      y  hara  que  sea  obloigatorio llenarlo en su totalidad  para  poder  enviarlo
+                                                                    .COLS:columnas, ROWS:filas
+.
+                                                                    .MINLENGTH: el mínmo de  longitud  que  debe  
+                                                                    tener  el comentario ejemplo solo 
+                                                                    10 caracteres
+                                                                    .MAXLENGTH: que no supere los 500 caracteres
+                                                                    28.50 cuarto video
+                                                                    .PLACEHOLDER: es para  dar  la  instrucciòn alos  usuarios
+                                                                    de  que  debe  hacer--> 
+
+<!--POR  ULTIMO ENVIOS: -->
+ 
+<form method="POST" action="backend/form.php" enctype="multipart/form-data">
+
+  <textarea name="comentario" id="" cols="30" rows="10" minlength="10" 
+  maxlength="500" placeholder="Escribe aquì tu comentario..." required></textarea>
+
+ <!--AQUI EL BOTON DE  ENVIAR--> 
+  <input type="submit" value="Enviar">                             <!--SUBMIT: PARA  ENVIAR FORMULARIOS
+                                                                   VALUE: SALE  EL BOTON  DE  ENVIAR--> 
+  
+</form>
+
+     
+
+</body>
+</html>

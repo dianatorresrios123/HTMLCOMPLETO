@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BOTONES DE  RADIO</title>
+</head>
+<body>
+    
+    <form method="POST" action="backend/form.php" enctype="multipart/form-data">
+
+        <input type="radio" name="comida" value="arroz" id="arroz"><label for="arroz">Arroz</label>
+        <!-- Aquí solo sale  el boton para  selecionar, tambien se utiliza  label para  
+              selecionar el tipo de  opción-->
+        <input type="radio" name="comida" value="papa" id="papa"><label for="papa">Papa</label>
+        <input type="radio" name="comida" value="pasta" id="pasta"><label for="pasta">Pasta</label>
+        <input type="radio" name="comida" value="carne" id="carne"> <label for="carne">Carne</label>
+        <input type="radio" name="comida" value="soup" id="soup"> <label for="soup">Soup</label>
+         
+    <!--5. CHECKBOX; versión  cuadrarda  de  los  botones-->
+
+    <form method="POST" action="backend/form.php" enctype="multipart/form-data"></form>
+
+    <input type="checkbox" name="terminos" value="yes" id="terminos">
+    <label for="terminos">Acepto los términos y condiciones</label>
+
+   <!--6. RANGOS:-->
+   
+   <form method="POST" action="backend/form.php" enctype="multipart/form-data"></form>
+   <input type="range" name="porcentaje" min="0" max="100"><!--aqui colocamos RANGE:EL RANGO,
+                                                  MIN: EL RANGO MÍNIMO
+                                                  MAX: EL RANGO MÁXIMO
+                                                 aqui sale una barra que puedo desplazar a los mínmos  
+                                                 y máximos--> 
+    <label for="terminos">Acepto los términos y condiciones</label>
+
+   <!----> 
+
+    </form>
+
+
+
+
+</body>
+</html>

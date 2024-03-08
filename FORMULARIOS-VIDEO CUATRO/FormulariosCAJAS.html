@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formularios</title>
+</head>
+<body>
+   <!--El atributo ACTION; me  indica  la  ruta donde  esta  el archivo--> 
+
+   <!--Estos  dos  indican como viajran los  datos  que  ingresan  los  usuarios:
+    1. GET,ES  PARA  ENVIAR  INFORMACIÒN  QUE  NO ES  SENSIBLE, esta informaciòn pude  ser leida  por  terceros
+    ( información que  noes  privada).
+    2. POST: ENCRIPTA  LA  INFORMACIÒN esta  no sera  leida  por  terceros(información privada).
+     --><!-- <form method="GET" action="backend/form.php"></form>
+             <form method="POST" action="backend/form.php"> </form> -->
+
+     <!--CAJA DE  TEXTO: SE  UTLIZA  IMPUT, dentro del formulario se genera  la  atiqueta  IMPUT-->  
+
+    <!-- LABEL: ES  PARA  INDICAR QUE  DEBE  HACER  EL USUARIO EN CADA  CAJA  CREADA-->
+
+Ejemplo:
+
+<form method="POST" action="backend/form.php">
+     <label for="username">Nombre  de  usuario</label> <!-- LABEL: ES  PARA  INDICAR QUE  DEBE  
+                                                 HACER  EL USUARIO EN CADA  CAJA  CREADA-->
+    <input type="text" name="username" 
+    id="username" placeholder="Por Ejemplo Diana Torres" value="">           <!--El inptu es  necesario nombrarlo para  que  lo podamos  ubicar (name)
+                                            TEXT ; indica  que es  una  caja  de  texto sencilla, 
+                                            indica  que  va  a  contener  texto, me  muestra  un rectangulo 
+                                            para  introducir  texto--> 
+
+                                          <!--PlACEHOLDER: es  para  indicarle  al usuraio que  debe  escribir, 
+                                            en marca de  agua, es  un  indicador que  ayuda  a guiar  al usuario-->
+
+                                          <!---VALUE; -->
+    <label for=""></label>                                       
+    <input type="number" name="username"><!--Tambien se  pude  construir una  caja  de  tipo números
+                                       aqui utilizamos (number) en esta  caja  parecen unas  flechas, 
+                                         al dar  clcik sobre ellas  aumenta  el número o disminuye: sale  1,2,3 ect--> 
+
+    <input type="password" name="username"><!--En esta  da  la opción de  colocar  numeros y letras, tipo contraseña
+                                            en ella  se visualiza puntos o CODIFICADO y no deja  ver  el texto 
+                                            y sale  la  figura  del ojo, que  se  pude  abrir  o cerra  para  ver 
+                                            las  letras--> 
+    
+    <input type="date" name="username"><!--Date: inidica que  el usuario debe  colocar FECHA
+                                          DIA, MES  Y AÑO EN NÚMEROS--> 
+
+    <input type="email" name="username"> <!--EMail; para  colocar  el correo elctrónico-->  
+    
+    <form method="POST" action="backend/form.php" enctype="multipart/form-data"> 
+    <input type="file" name="username"> <!--FILE. para  subir  archivos, se  le  debe  añadir en --> 
+                                       <!--Sele  debe  añadir  del form ENCTYPE:
+                                         para  indicar  el tipo de  archivos  que  podra  subir-->
+
+
+    <input type="time" name="username"><!--Aqui se  coloca  el usuario--> 
+
+    2. <form method="POST" action="backend/form.php"><!--  aqui se  coloca  la  etiqieta <SELECt></SELECt>-->
+         
+        <select name="Pais" id="" multiple> <!--Se pude  añadir  el atributo MULTIPLE: el usuario pude  elegir  
+                                                el país que  necesita--> 
+
+            <option value="es">España</option>   <!--En la  etiqueta OPTION: colocamos  las  opciones que  
+                                               va  a  tener --> 
+            <option value="co">Colombia</option> 
+            <option value="pe">Peru</option> 
+            <option value="ar">Argentina</option> 
+            <option value="ecu">Ecuador</option> 
+            <option value="mex">Mexico</option> 
+            <option value="br">Brasil</option>
+            <option value="chil">Chile</option> 
+            <option value="cu">Cuba</option>  
+            <option value="pur">Puerto Rico</option> 
+                       
+                                                           
+         </select>
+     
+</form>
+
+    
+</body>
+</html>
